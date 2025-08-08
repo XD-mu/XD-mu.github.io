@@ -41,7 +41,7 @@ My research interests include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/ICCV.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu`, Yijun Qu, Jiexi Yan, Erkun Yang*, Cheng Deng. Meta-Learning Dynamic Center Distance: Hard Sample Mining for Learning
+-	`Chenyu Mu`, Yijun Qu, Jiexi Yan, Erkun Yang†, Cheng Deng. Meta-Learning Dynamic Center Distance: Hard Sample Mining for Learning
 with Noisy Labels. 
 [[Paper Link]](https:)
 
@@ -51,7 +51,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGIR 2025</div><img src='images/SIGIR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu`, Erkun Yang *, Cheng Deng. Meta-Guided Adaptive Weight Learner for Noisy Correspondence. 
+-	`Chenyu Mu`, Erkun Yang †, Cheng Deng. Meta-Guided Adaptive Weight Learner for Noisy Correspondence. 
 [[Paper Link]](https://dl.acm.org/doi/pdf/10.1145/3726302.3730032)
 
 </div>
@@ -60,7 +60,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"> AAAI 2025</div><img src='images/AAAI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu` *, Jiahua Li *, Kun Wei, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
+-	`Chenyu Mu` *, Jiahua Li *, Kun Wei†, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
 [[Paper Link]](https://ojs.aaai.org/index.php/AAAI/article/view/32659/34814)
 
 </div>
@@ -69,7 +69,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Hazardous Materials 2025</div><img src='images/Weixian.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Liyan Bi, Huangruici Zhang, `Chenyu Mu`*, Kaidi Sun, Hao Chen, Zhiyang Zhang, Lingxin Chen. Paper-based SERS chip with adaptive attention neural network for pathogen identification.  
+-	Liyan Bi *, Huangruici Zhang *, `Chenyu Mu`*, Kaidi Sun, Hao Chen, Zhiyang Zhang, Lingxin Chen. Paper-based SERS chip with adaptive attention neural network for pathogen identification.  
 [[Paper Link]](https://www.sciencedirect.com/science/article/abs/pii/S0304389425016103) 
 
 </div>
