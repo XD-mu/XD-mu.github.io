@@ -4,13 +4,13 @@ main:
     url: "/#about-me"
 
   - title: "Educations"
-    url: "/#-educations"
+    url: "/#-xl"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/#-lwzl"
 
   - title: "Conferences"
-    url: "/#-conferences"
+    url: "/#-xshy"
 
   - title: "Internships"
-    url: "/#-internships"
+    url: "/#-gzsx"
