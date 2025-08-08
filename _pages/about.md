@@ -60,7 +60,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"> AAAI 2025</div><img src='images/AAAI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu` *, Jiahua Li *, Kun Wei †, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
+-	`Chenyu Mu *, Jiahua Li *`, Kun Wei †, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
 [[Paper Link]](https://ojs.aaai.org/index.php/AAAI/article/view/32659/34814)
 
 </div>
