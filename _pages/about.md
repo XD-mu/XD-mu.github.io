@@ -41,7 +41,7 @@ My research interests include:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/ICCV.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu`, Yijun Qu, Jiexi Yan, Erkun Yang <sup>†</sup>, Cheng Deng. Meta-Learning Dynamic Center Distance: Hard Sample Mining for Learning
+-	`Chenyu Mu`, Yijun Qu, Jiexi Yan, Erkun Yang<sup>†</sup>, Cheng Deng. Meta-Learning Dynamic Center Distance: Hard Sample Mining for Learning
 with Noisy Labels. 
 [[Paper Link]](https:)
 
@@ -51,7 +51,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGIR 2025</div><img src='images/SIGIR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu`, Erkun Yang <sup>†</sup>, Cheng Deng. Meta-Guided Adaptive Weight Learner for Noisy Correspondence. 
+-	`Chenyu Mu`, Erkun Yang<sup>†</sup>, Cheng Deng. Meta-Guided Adaptive Weight Learner for Noisy Correspondence. 
 [[Paper Link]](https://dl.acm.org/doi/pdf/10.1145/3726302.3730032)
 
 </div>
@@ -60,7 +60,7 @@ with Noisy Labels.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"> AAAI 2025</div><img src='images/AAAI.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Chenyu Mu`<sup>*</sup>, Jiahua Li<sup>*</sup>, Kun Wei <sup>†</sup>, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
+-	`Chenyu Mu`<sup>*</sup>, Jiahua Li<sup>*</sup>, Kun Wei<sup>†</sup>, Cheng Deng. Energy vs. Noise: Towards Robust Temporal Action Localization in Open-World. 
 [[Paper Link]](https://ojs.aaai.org/index.php/AAAI/article/view/32659/34814)
 
 </div>
