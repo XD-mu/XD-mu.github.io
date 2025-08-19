@@ -43,7 +43,7 @@ My research interests include:
 
 -	`Chenyu Mu`, Yijun Qu, Jiexi Yan, Erkun Yang<sup>†</sup>, Cheng Deng. Meta-Learning Dynamic Center Distance: Hard Sample Mining for Learning
 with Noisy Labels. 
-[[Paper Link]](https://github.com/XD-mu/XD-mu.github.io/article/ICCV2025_mcy.pdf)[[Supplementary Material]](https://github.com/XD-mu/XD-mu.github.io/article/ICCV2025_mcy_Sup.pdf)
+[[Paper Link]](https://github.com/XD-mu/XD-mu.github.io/blob/main/article/ICCV2025_mcy.pdf)[[Supplementary Material]](https://github.com/XD-mu/XD-mu.github.io/blob/main/article/ICCV2025_mcy_Sup.pdf)
 
 </div>
 </div>
