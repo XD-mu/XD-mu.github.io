@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Chenyu Mu"
-description              : "This is the academic homepage of Mu."
-repository               : "XD-mu/xd-mu.github.io/"
+description              : "Agent/MLLM/Noisy Labels"
+repository               : "XD-mu/XD-mu.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics

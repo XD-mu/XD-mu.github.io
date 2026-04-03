@@ -8,23 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
-I will graduate with a Master's degree from the School of Electronic Engineering at Xidian University in Xi'an, Shaanxi, under the supervision of Professor Cheng Deng. I completed my undergraduate degree at the School of Electronic Engineering, Xidian University in Xi'an, Shaanxi. Including co-authored works, I have published 4 academic papers
- <a href='https://scholar.google.com/citations?user=CYT2dggAAAAJ&hl=en&oi=ao'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
-
-My research interests include:
-- Noisy Labels
-- Cross-Modal Retrieval
-- Digital Human Lens Generation
-- Medical Image Segmentation
+I will graduate with a Master's degree from the School of Electronic Engineering at Xidian University in Xi'an, Shaanxi, under the supervision of Professor Cheng Deng. I completed my undergraduate degree at the School of Electronic Engineering, Xidian University in Xi'an, Shaanxi. Including co-authored works, I have published 6 academic papers
+ <a href='https://scholar.google.com/citations?user=CYT2dggAAAAJ&hl=en&oi=ao'>Google Scholar Citations: <span id='total_cit'>loading...</span></a>.
 
 <span class='anchor' id='-xl'></span>
 
@@ -38,6 +25,24 @@ My research interests include:
 
 <!-- ### English -->
 ---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/Script.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Chenyu Mu`<sup>*</sup>, Xin He<sup>*</sup>, Qu Yang<sup>*</sup>, Wanshun Chen, Jiadi Yao, Huang Liu, Zihao Yi, Bo Zhao, Xingyu Chen, Ruotian Ma, Fanghua Ye, Erkun Yang, Cheng Deng, Zhaopeng Tu<sup>†</sup>, Xiaolong Li, and Linus. The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation.
+[[Paper Link]](https://arxiv.org/pdf/2601.17737)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/MetaDCSeg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Chenyu Mu`, Guihai Chen, Xun Yang, Erkun Yang<sup>†</sup>, Cheng Deng<sup>†</sup>. Not All Pixels Are Equal: Pixel-wise Meta-Learning for Medical Segmentation with Noisy Labels.
+[[Paper Link]](https://arxiv.org/pdf/2511.18894)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/ICCV.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -91,4 +96,7 @@ with Noisy Labels.
 <span class='anchor' id='-gzsx'></span>
 
 # 💻 Work Experience
-- *2025.07 - Present*, Tencent Technology (Shenzhen) Co., Ltd., Shenzhen
+- *2025.12 - Present*, **JD.com**, Explore Academy, Beijing
+- *2025.07 - 2025.12*, **Tencent**, TEG Hunyuan, Shenzhen
+
+
