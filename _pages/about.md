@@ -95,7 +95,7 @@ with Noisy Labels.
 
 <span class='anchor' id='-gzsx'></span>
 
-# 💻 Work Experience
+# 💻 Internship Experience
 - *2026.04 - Present*, **Tencent**, WXG, Shenzhen
 - *2025.12 - 2026.04*, **JD.com**, Explore Academy, Beijing
 - *2025.07 - 2025.12*, **Tencent**, TEG Hunyuan, Shenzhen
