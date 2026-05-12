@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 I will graduate with a Master's degree from the School of Electronic Engineering at Xidian University in Xi'an, Shaanxi, under the supervision of Professor Cheng Deng. I completed my undergraduate degree at the School of Electronic Engineering, Xidian University in Xi'an, Shaanxi. Including co-authored works, I have published 6 academic papers
- <a href='https://scholar.google.com/citations?user=CYT2dggAAAAJ&hl=en&oi=ao'>Google Scholar Citations: <span id='total_cit'>loading...</span></a>.
+ <a href='https://scholar.google.com/citations?user=CYT2dggAAAAJ&hl=en&oi=ao'>Google Scholar</a>.
 
 <span class='anchor' id='-xl'></span>
 
