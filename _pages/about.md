@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am expected to receive my Master's degree from the School of Electronic Engineering at Xidian University in Xi'an, Shaanxi, under the supervision of Prof. Cheng Deng and Assoc. Prof. Erkun Yang. I received my Bachelor's degree from the School of Electronic Engineering, Xidian University. To date, I have published six academic papers, including co-authored publications.
+I am expected to receive my Master's degree from the School of Electronic Engineering at Xidian University in Xi'an, Shaanxi, under the supervision of Prof. Cheng Deng and Assoc. Prof. Erkun Yang. I received my Bachelor's degree from the School of Electronic Engineering, Xidian University. To date, I have published seven academic papers, including co-authored publications.
  <a href='https://scholar.google.com/citations?user=CYT2dggAAAAJ&hl=en&oi=ao'>Google Scholar</a>.
 
 <span class='anchor' id='-xl'></span>
@@ -25,6 +25,15 @@ I am expected to receive my Master's degree from the School of Electronic Engine
 
 <!-- ### English -->
 ---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2026</div><img src='images/WEDirector.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Chenyu Mu`, Wenming Weng, Xingsong Ye, Hao Yu, Yuxi Li, Jun He, Yazhen Xie, Chong Sun, Chen Li, Jing Lyu, Erkun Yang<sup>†</sup>, Cheng Deng<sup>†</sup>. WEDirector: Training an Autonomous Long-Horizon Tool Agent for End-to-End Script-to-Video Production.
+[[Project Page]](https://xd-mu.github.io/WEDirector/)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/Script.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

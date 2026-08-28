@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEDirector: One Agent Runs the Whole Editing Room</title>
+<meta name="description" content="WEDirector trains a single role-routed policy to plan, retrieve, narrate, compose, inspect and repair — delivering finished long-form videos from a bare narration script.">
+<link rel="canonical" href="https://xd-mu.github.io/WEDirector/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xd-mu.github.io/WEDirector/">
+<meta property="og:title" content="WEDirector: One Agent Runs the Whole Editing Room">
+<meta property="og:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
+<meta property="og:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WEDirector: One Agent Runs the Whole Editing Room">
+<meta name="twitter:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
+<meta name="twitter:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">WE<span class="accent">Director</span></a>
+    <div class="nav-links">
+      <a href="#demo">Demo</a>
+      <a href="#data">Data</a>
+      <a href="#method">Method</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#results">Results</a>
+      <a href="#versus">Vs.&nbsp;Workflow-based</a>
+      <a href="#cite">Cite</a>
+    </div>
+    <span class="nav-tc mono" id="navTc">00:00:00:00</span>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO / PAPER HEADER ══════════════ -->
+<header class="hero" id="top">
+  <div class="hero-bg-art" id="heroBg" aria-hidden="true">
+    <div class="hero-wall">
+      <div class="wall-row r1">
+        <img src="assets/videos/space.jpg" alt=""><img src="assets/videos/vs/our_tech.jpg" alt=""><img src="assets/videos/civilization.jpg" alt=""><img src="assets/videos/vs/cr_finance.jpg" alt=""><img src="assets/videos/tree.jpg" alt=""><img src="assets/videos/vs/our_nature.jpg" alt="">
+        <img src="assets/videos/space.jpg" alt=""><img src="assets/videos/vs/our_tech.jpg" alt=""><img src="assets/videos/civilization.jpg" alt=""><img src="assets/videos/vs/cr_finance.jpg" alt=""><img src="assets/videos/tree.jpg" alt=""><img src="assets/videos/vs/our_nature.jpg" alt="">
+      </div>
+      <div class="wall-row r2">
+        <img src="assets/videos/vs/our_society.jpg" alt=""><img src="assets/videos/vs/cr_tech.jpg" alt=""><img src="assets/videos/vs/our_finance.jpg" alt=""><img src="assets/videos/vs/cr_nature.jpg" alt=""><img src="assets/videos/vs/cr_society.jpg" alt=""><img src="assets/videos/vs/our_tech.jpg" alt="">
+        <img src="assets/videos/vs/our_society.jpg" alt=""><img src="assets/videos/vs/cr_tech.jpg" alt=""><img src="assets/videos/vs/our_finance.jpg" alt=""><img src="assets/videos/vs/cr_nature.jpg" alt=""><img src="assets/videos/vs/cr_society.jpg" alt=""><img src="assets/videos/vs/our_tech.jpg" alt="">
+      </div>
+    </div>
+    <div class="orb orb-teal"></div>
+    <div class="orb orb-amber"></div>
+    <div class="orb orb-violet"></div>
+    <canvas class="hero-flow" id="heroFlow"></canvas>
+    <div class="hero-gridlines"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="hero-mask" aria-hidden="true"></div>
+  <div class="film-edge" aria-hidden="true">
+    <div class="film">
+      <div class="film-holes"></div>
+      <div class="film-frames">
+        <span class="ff c1"></span><span class="ff c2"></span><span class="ff c3"></span>
+        <span class="ff c4"></span><span class="ff c5"></span><span class="ff c6"></span>
+        <span class="ff c7"></span><span class="ff c8"></span><span class="ff c9"></span>
+      </div>
+      <div class="film-holes"></div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-kicker mono reveal">AUTONOMOUS&nbsp;SCRIPT&nbsp;→&nbsp;SCREEN&nbsp;·&nbsp;LONG-HORIZON&nbsp;TOOL&nbsp;AGENT</p>
+    <h1 class="reveal">WE<em>Director</em></h1>
+    <p class="hero-title reveal">One Agent Runs the Whole Editing Room</p>
+
+    <p class="hero-authors reveal">Chenyu Mu<sup>1,2</sup>,&ensp;Wenming Weng<sup>2</sup>,&ensp;Xingsong Ye<sup>2</sup>,&ensp;Hao Yu<sup>2</sup>,&ensp;Yuxi Li<sup>2</sup>,&ensp;Jun He<sup>2</sup>,&ensp;Yazhen Xie<sup>2</sup>,&ensp;Chong Sun<sup>2</sup>,&ensp;Chen Li<sup>2</sup>,&ensp;Jing LYU<sup>2</sup>,&ensp;Erkun Yang<sup>1,✉</sup>,&ensp;Cheng Deng<sup>1,✉</sup></p>
+    <p class="hero-affil reveal"><sup>1</sup>Xidian University&emsp;<sup>2</sup>WeChat Vision, Tencent Inc.&emsp;<span class="authors-note">✉ corresponding authors</span></p>
+
+    <p class="hero-abstract reveal">One 9B policy runs the whole cutting room: it segments the script, plans shots,
+      retrieves visuals, synthesizes narration, composes the timeline, inspects every render —
+      and repairs only what failed. <b>No human in the loop.</b></p>
+
+    <!-- ✏️ 资源链接：把 href="#" 替换为真实地址 -->
+    <div class="hero-res reveal">
+      <a class="res-btn res-hf" href="#" aria-label="Model on Hugging Face">
+        <svg viewBox="0 0 95 88" fill="none" aria-hidden="true">
+          <path fill="#FFD21E" d="M47.21 76.5a34.75 34.75 0 1 0 0-69.5 34.75 34.75 0 0 0 0 69.5Z"/>
+          <path fill="#FF9D0B" d="M81.96 41.75a34.75 34.75 0 1 0-69.5 0 34.75 34.75 0 0 0 69.5 0Zm-73.5 0a38.75 38.75 0 1 1 77.5 0 38.75 38.75 0 0 1-77.5 0Z"/>
+          <path fill="#3A3B45" d="M58.5 32.3c1.28.44 1.78 3.06 3.07 2.38a5 5 0 1 0-6.76-2.07c.61 1.15 2.55-.72 3.7-.32ZM34.95 32.3c-1.28.44-1.79 3.06-3.07 2.38a5 5 0 1 1 6.76-2.07c-.61 1.15-2.56-.72-3.7-.32Z"/>
+          <path fill="#FF323D" d="M46.96 56.29c9.83 0 13-8.76 13-13.26 0-2.34-1.57-1.6-4.09-.36-2.33 1.15-5.46 2.74-8.9 2.74-7.19 0-13-6.88-13-2.38s3.16 13.26 13 13.26Z"/>
+          <path fill="#3A3B45" fill-rule="evenodd" d="M39.43 54a8.7 8.7 0 0 1 5.3-4.49c.4-.12.81.57 1.24 1.28.4.68.82 1.37 1.24 1.37.45 0 .9-.68 1.33-1.35.45-.7.89-1.38 1.32-1.25a8.61 8.61 0 0 1 5 4.17c3.73-2.94 5.1-7.74 5.1-10.7 0-2.34-1.57-1.6-4.09-.36l-.14.07c-2.31 1.15-5.39 2.67-8.77 2.67s-6.45-1.52-8.77-2.67c-2.6-1.29-4.23-2.1-4.23.29 0 3.05 1.46 8.06 5.47 10.97Z" clip-rule="evenodd"/>
+          <path fill="#FF9D0B" d="M70.71 37a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5ZM24.21 37a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5ZM17.52 48c-1.62 0-3.06.66-4.07 1.87a5.97 5.97 0 0 0-1.33 3.76 7.1 7.1 0 0 0-1.94-.3c-1.55 0-2.95.59-3.94 1.66a5.8 5.8 0 0 0-.8 7 5.3 5.3 0 0 0-1.79 2.82c-.24.9-.48 2.8.8 4.74a5.22 5.22 0 0 0-.37 5.02c1.02 2.32 3.57 4.14 8.52 6.1 3.07 1.22 5.89 2 5.91 2.01a44.33 44.33 0 0 0 10.93 1.6c5.86 0 10.05-1.8 12.46-5.34 3.88-5.69 3.33-10.9-1.7-15.92-2.77-2.78-4.62-6.87-5-7.77-.78-2.66-2.84-5.62-6.25-5.62a5.7 5.7 0 0 0-4.6 2.46c-1-1.26-1.98-2.25-2.86-2.82A7.4 7.4 0 0 0 17.52 48Zm0 4c.51 0 1.14.22 1.82.65 2.14 1.36 6.25 8.43 7.76 11.18.5.92 1.37 1.31 2.14 1.31 1.55 0 2.75-1.53.15-3.48-3.92-2.93-2.55-7.72-.68-8.01.08-.02.17-.02.24-.02 1.7 0 2.45 2.93 2.45 2.93s2.2 5.52 5.98 9.3c3.77 3.77 3.97 6.8 1.22 10.83-1.88 2.75-5.47 3.58-9.16 3.58-3.81 0-7.73-.9-9.92-1.46-.11-.03-13.45-3.8-11.76-7 .28-.54.75-.76 1.34-.76 2.38 0 6.7 3.54 8.57 3.54.41 0 .7-.17.83-.6.79-2.85-12.06-4.05-10.98-8.17.2-.73.71-1.02 1.44-1.02 3.14 0 10.2 5.53 11.68 5.53.11 0 .2-.03.24-.1.74-1.2.33-2.04-4.9-5.2-5.21-3.16-8.88-5.06-6.8-7.33.24-.26.58-.38 1-.38 3.17 0 10.66 6.82 10.66 6.82s2.02 2.1 3.25 2.1c.28 0 .52-.1.68-.38.86-1.46-8.06-8.22-8.56-11.01-.34-1.9.24-2.85 1.31-2.85Z"/>
+          <path fill="#FFD21E" d="M38.6 76.69c2.75-4.04 2.55-7.07-1.22-10.84-3.78-3.77-5.98-9.3-5.98-9.3s-.82-3.2-2.69-2.9c-1.87.3-3.24 5.08.68 8.01 3.91 2.93-.78 4.92-2.29 2.17-1.5-2.75-5.62-9.82-7.76-11.18-2.13-1.35-3.63-.6-3.13 2.2.5 2.79 9.43 9.55 8.56 11-.87 1.47-3.93-1.71-3.93-1.71s-9.57-8.71-11.66-6.44c-2.08 2.27 1.59 4.17 6.8 7.33 5.23 3.16 5.64 4 4.9 5.2-.75 1.2-12.28-8.53-13.36-4.4-1.08 4.11 11.77 5.3 10.98 8.15-.8 2.85-9.06-5.38-10.74-2.18-1.7 3.21 11.65 6.98 11.76 7.01 4.3 1.12 15.25 3.49 19.08-2.12Z"/>
+          <path fill="#FF9D0B" d="M77.4 48c1.62 0 3.07.66 4.07 1.87a5.97 5.97 0 0 1 1.33 3.76 7.1 7.1 0 0 1 1.95-.3c1.55 0 2.95.59 3.94 1.66a5.8 5.8 0 0 1 .8 7 5.3 5.3 0 0 1 1.78 2.82c.24.9.48 2.8-.8 4.74a5.22 5.22 0 0 1 .37 5.02c-1.02 2.32-3.57 4.14-8.51 6.1-3.08 1.22-5.9 2-5.92 2.01a44.33 44.33 0 0 1-10.93 1.6c-5.86 0-10.05-1.8-12.46-5.34-3.88-5.69-3.33-10.9 1.7-15.92 2.78-2.78 4.63-6.87 5.01-7.77.78-2.66 2.83-5.62 6.24-5.62a5.7 5.7 0 0 1 4.6 2.46c1-1.26 1.98-2.25 2.87-2.82A7.4 7.4 0 0 1 77.4 48Zm0 4c-.51 0-1.13.22-1.82.65-2.13 1.36-6.25 8.43-7.76 11.18a2.43 2.43 0 0 1-2.14 1.31c-1.54 0-2.75-1.53-.14-3.48 3.91-2.93 2.54-7.72.67-8.01a1.54 1.54 0 0 0-.24-.02c-1.7 0-2.45 2.93-2.45 2.93s-2.2 5.52-5.97 9.3c-3.78 3.77-3.98 6.8-1.22 10.83 1.87 2.75 5.47 3.58 9.15 3.58 3.82 0 7.73-.9 9.93-1.46.1-.03 13.45-3.8 11.76-7-.29-.54-.75-.76-1.34-.76-2.38 0-6.71 3.54-8.57 3.54-.42 0-.71-.17-.83-.6-.8-2.85 12.05-4.05 10.97-8.17-.19-.73-.7-1.02-1.44-1.02-3.14 0-10.2 5.53-11.68 5.53-.1 0-.19-.03-.23-.1-.74-1.2-.34-2.04 4.88-5.2 5.23-3.16 8.9-5.06 6.8-7.33-.23-.26-.57-.38-.98-.38-3.18 0-10.67 6.82-10.67 6.82s-2.02 2.1-3.24 2.1a.74.74 0 0 1-.68-.38c-.87-1.46 8.05-8.22 8.55-11.01.34-1.9-.24-2.85-1.31-2.85Z"/>
+          <path fill="#FFD21E" d="M56.33 76.69c-2.75-4.04-2.56-7.07 1.22-10.84 3.77-3.77 5.97-9.3 5.97-9.3s.82-3.2 2.7-2.9c1.86.3 3.23 5.08-.68 8.01-3.92 2.93.78 4.92 2.28 2.17 1.51-2.75 5.63-9.82 7.76-11.18 2.13-1.35 3.64-.6 3.13 2.2-.5 2.79-9.42 9.55-8.55 11 .86 1.47 3.92-1.71 3.92-1.71s9.58-8.71 11.66-6.44c2.08 2.27-1.58 4.17-6.8 7.33-5.23 3.16-5.63 4-4.9 5.2.75 1.2 12.28-8.53 13.36-4.4 1.08 4.11-11.76 5.3-10.97 8.15.8 2.85 9.05-5.38 10.74-2.18 1.69 3.21-11.65 6.98-11.76 7.01-4.31 1.12-15.26 3.49-19.08-2.12Z"/>
+        </svg>
+        MODEL
+      </a>
+      <a class="res-btn res-traj" href="#" aria-label="Trajectory data">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 19.5C8 10.5 12 16 20 4.5" stroke="url(#trajGrad)" stroke-width="2" stroke-linecap="round" stroke-dasharray=".1 4"/>
+          <circle cx="4" cy="19.5" r="2" fill="#3ee6c4"/>
+          <circle cx="12" cy="13.4" r="2" fill="#8fd8c8"/>
+          <circle cx="20" cy="4.5" r="2" fill="#ffb454"/>
+          <defs><linearGradient id="trajGrad" x1="4" y1="19.5" x2="20" y2="4.5" gradientUnits="userSpaceOnUse"><stop stop-color="#3ee6c4"/><stop offset="1" stop-color="#ffb454"/></linearGradient></defs>
+        </svg>
+        TRAJECTORY DATA
+      </a>
+      <a class="res-btn res-arxiv" href="#" aria-label="Tech report on arXiv">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path fill="#B31B1B" d="M5.05 4.6c2.4 2.8 4.4 4.5 6.95 5.7 2.55-1.2 4.55-2.9 6.95-5.7l1.9 1.5c-2.1 2.5-3.9 4.3-5.35 5.5 1.45 1.2 3.25 3 5.35 5.5l-1.9 1.5c-2.4-2.8-4.4-4.5-6.95-5.7-2.55 1.2-4.55 2.9-6.95 5.7l-1.9-1.5c2.1-2.5 3.9-4.3 5.35-5.5-1.45-1.2-3.25-3-5.35-5.5l1.9-1.5Z"/>
+        </svg>
+        TECH&nbsp;REPORT
+      </a>
+    </div>
+
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#demo"><span class="rec-dot"></span>WATCH&nbsp;IT&nbsp;EDIT</a>
+      <a class="btn btn-ghost" href="#results">RESULTS</a>
+      <a class="btn btn-ghost" href="#gallery">GALLERY</a>
+    </div>
+  </div>
+
+  <!-- decorative film strip -->
+  <div class="film-edge bottom" aria-hidden="true">
+    <div class="film">
+      <div class="film-holes"></div>
+      <div class="film-frames">
+        <span class="ff c1"></span><span class="ff c2"></span><span class="ff c3"></span>
+        <span class="ff c4"></span><span class="ff c5"></span><span class="ff c6"></span>
+        <span class="ff c7"></span><span class="ff c8"></span><span class="ff c9"></span>
+      </div>
+      <div class="film-holes"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ DEMO CONSOLE ══════════════ -->
+<section class="section" id="demo">
+  <div class="section-head reveal">
+    <div class="tag mono">DEMO · LIVE&nbsp;RUN</div>
+    <h2>Watch the Agent Cut — Then Tell It What to Change <span class="cn-sub"></span></h2>
+    <p>Every turn is <span class="mono dim">observe&nbsp;→&nbsp;think&nbsp;→&nbsp;act</span>. After the first cut lands,
+       the director chats: swap a shot's source, change the music, restyle the captions —
+       the policy re-plans locally and re-delivers, never re-shooting what already worked.</p>
+  </div>
+
+  <div class="deck reveal" id="deck">
+    <div class="deck-bar">
+      <span class="rec"><i></i>REC</span>
+      <span class="mono deck-title">WEDIRECTOR · AGENT&nbsp;DECK</span>
+      <span class="mono deck-session" id="deckSession">TAKE&nbsp;A7F2</span>
+      <span class="mono deck-clock" id="deckClock">00:00:00:00</span>
+    </div>
+
+    <div class="deck-body">
+      <!-- left: chat with the agent -->
+      <div class="stream-col">
+        <div class="col-label mono">DIRECTOR'S&nbsp;CHAT · 与智能体对话</div>
+        <div class="stream" id="stream"></div>
+        <div class="run-progress"><div class="run-progress-fill" id="runProgress"></div></div>
+      </div>
+
+      <!-- right: preview on top, timeline below -->
+      <div class="tl-col">
+        <div class="col-label mono">PREVIEW · 成片预览</div>
+        <div class="preview" id="preview">
+          <div class="preview-slate" id="pvSlate"><span class="rec-dot"></span>AWAITING&nbsp;FIRST&nbsp;CUT</div>
+          <video id="pvVideo" src="assets/videos/civilization.mp4" poster="assets/videos/civilization.jpg" controls playsinline preload="none"></video>
+          <span class="pv-badge mono" id="pvBadge">CUT&nbsp;v1</span>
+        </div>
+
+        <div class="col-label mono">TIMELINE · 时间线实时构建</div>
+        <div class="nle" id="nle">
+          <div class="nle-ruler" id="nleRuler"></div>
+          <div class="nle-track" data-track="v1"><span class="trk mono">V1</span><div class="trk-lane" id="laneV"></div></div>
+          <div class="nle-track" data-track="t"><span class="trk mono">TXT</span><div class="trk-lane" id="laneT"></div></div>
+          <div class="nle-track" data-track="a1"><span class="trk mono">A1</span><div class="trk-lane" id="laneA"></div></div>
+          <div class="nle-track" data-track="a2"><span class="trk mono">BGM</span><div class="trk-lane" id="laneB"></div></div>
+          <div class="nle-playhead" id="nlePlayhead"></div>
+        </div>
+
+        <div class="state-chips mono" id="stateChips">
+          <div class="chip"><label>segments</label><b id="stSeg">–</b></div>
+          <div class="chip"><label>shots placed</label><b id="stShot">–</b></div>
+          <div class="chip warn-chip"><label>open issues</label><b id="stIssue">0</b></div>
+          <div class="chip"><label>repair budget</label><b id="stBudget">4</b></div>
+          <div class="chip"><label>artifact</label><b id="stArt">–</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="deck-foot">
+      <button class="btn-mini mono" id="replayBtn">↻ REPLAY&nbsp;TAKE</button>
+      <span class="foot-note">Scripted replay of real production + interactive-revision traces · AICut Studio runtime · DAPO checkpoint</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DATA ENGINE ══════════════ -->
+<section class="section" id="data">
+  <div class="section-head reveal">
+    <div class="tag mono">DATA&nbsp;ENGINE</div>
+    <h2>Editing Inversion &amp; Verified Replay <span class="cn-sub"></span></h2>
+    <p>Finished videos hide the process that made them. We invert them back into timestamped intent,
+       then replay that intent through the real toolchain — executable supervision, grounded in real tool returns.</p>
+  </div>
+  <figure class="fig-card vf fig-wide reveal">
+    <img src="assets/img/data.webp" alt="Editing inversion and verified replay" loading="lazy">
+    <figcaption class="mono">3,750 FINISHED PROJECTS → INVERTED INTENT → VERIFIED REPLAY → 134,771 ROLE-ROUTED SAMPLES</figcaption>
+  </figure>
+  <div class="data-stats reveal">
+    <div class="dstat"><b class="mono"><span class="count" data-to="3750" data-dec="0">0</span></b><span>aligned finished projects</span></div>
+    <div class="dstat"><b class="mono"><span class="count" data-to="134771" data-dec="0">0</span></b><span>role-routed training samples</span></div>
+    <div class="dstat"><b class="mono"><span class="count" data-to="48" data-dec="0">0</span></b><span>max autonomous steps / run</span></div>
+  </div>
+</section>
+
+<!-- ══════════════ METHOD ══════════════ -->
+<section class="section" id="method">
+  <div class="section-head reveal">
+    <div class="tag mono">METHOD</div>
+    <h2>One Policy, the Whole Cutting Room <span class="cn-sub"></span></h2>
+    <p>Script-to-video is formulated as a stateful, long-horizon tool-use problem.
+       A single role-routed policy closes the loop between planning, execution, observation, inspection and repair.</p>
+  </div>
+
+  <figure class="fig-card vf reveal">
+    <img src="assets/img/pipeline.webp" alt="WEDirector pipeline overview" loading="lazy">
+    <figcaption class="mono">FIG.1 — EDITING AS A SEQUENTIAL DECISION PROCESS · DATA ENGINE (INVERSION + VERIFIED REPLAY) · TRAINING PROGRESSION</figcaption>
+  </figure>
+
+  <div class="method-grid reveal">
+    <figure class="fig-card vf">
+      <img src="assets/img/overview.webp" alt="WEDirector architecture" loading="lazy">
+      <figcaption class="mono">FIG.2 — UNIFIED ARCHITECTURE · ONE POLICY, FIVE ROLES</figcaption>
+    </figure>
+    <div class="roles">
+      <div class="role"><span class="role-no mono">01</span><div><b>Director</b><p>Owns the brief, the state and the final call.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">02</span><div><b>Screenwriter</b><p>Segments narration into timestamped beats.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">03</span><div><b>Storyboard Artist</b><p>Plans shots, retrieves visuals, synthesizes speech.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">04</span><div><b>Editor</b><p>Composes timeline, effects and music.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">05</span><div><b>Inspector</b><p>Judges every dimension, routes localized repair.</p><span class="role-cn"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ GALLERY ══════════════ -->
+<section class="section" id="gallery">
+  <div class="section-head reveal">
+    <div class="tag mono">GALLERY</div>
+    <h2>Directed by the Policy <span class="cn-sub"></span></h2>
+    <p>Unedited deliveries from the deployed runtime. One script in — one finished film out.</p>
+  </div>
+
+  <div class="film reveal">
+    <div class="sprocket top" aria-hidden="true"></div>
+    <div class="gallery">
+      <article class="card" data-video="assets/videos/space.mp4">
+        <div class="card-media"><img src="assets/videos/space.jpg" alt="To Space, On a Rocket" loading="lazy"><span class="card-play">▶</span><span class="card-tc mono">03:21</span></div>
+        <div class="card-body"><h3>To Space, On a Rocket</h3><p class="cn">太空科普 · 火箭如何送人上天</p></div>
+      </article>
+      <article class="card" data-video="assets/videos/civilization.mp4">
+        <div class="card-media"><img src="assets/videos/civilization.jpg" alt="Five Thousand Years" loading="lazy"><span class="card-play">▶</span><span class="card-tc mono">05:49</span></div>
+        <div class="card-body"><h3>Five Thousand Years</h3><p class="cn">中华文明 · 时间洪流中的延续</p></div>
+      </article>
+      <article class="card" data-video="assets/videos/tree.mp4">
+        <div class="card-media"><img src="assets/videos/tree.jpg" alt="How Trees Lift Water" loading="lazy"><span class="card-play">▶</span><span class="card-tc mono">04:37</span></div>
+        <div class="card-body"><h3>How Trees Lift Water</h3><p class="cn">没有水泵 · 大树如何送水上树冠</p></div>
+      </article>
+    </div>
+    <div class="sprocket bottom" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ══════════════ RESULTS ══════════════ -->
+<section class="section" id="results">
+  <div class="section-head reveal">
+    <div class="tag mono">RESULTS</div>
+    <h2>Small Policy, Frontier Delivery <span class="cn-sub"></span></h2>
+    <p>100 held-out cases · 5 independent runs · 5 registered metrics (mean ± std) + production cost per output minute.</p>
+  </div>
+
+  <!-- main table -->
+  <div class="tbl-wrap reveal">
+    <table class="tbl mono" id="mainTable">
+      <thead>
+        <tr><th class="l">METHOD</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>CALLS/MIN↓</th><th>TOKENS/MIN↓</th></tr>
+      </thead>
+      <tbody>
+        <tr class="grp"><td colspan="8">BASE MODELS · NATIVE CAPABILITY</td></tr>
+        <tr><td class="l">Qwen3.5-9B</td><td>69.8±1.6</td><td>59.2±1.8</td><td>79.5±1.7</td><td>93.7±0.8</td><td>70.4±2.1</td><td>3.1</td><td>11,883</td></tr>
+        <tr><td class="l">Qwen3.6-27B</td><td>72.6±1.4</td><td>59.7±1.6</td><td>80.1±1.5</td><td>95.1±0.7</td><td>72.1±1.9</td><td>3.9</td><td>6,742</td></tr>
+        <tr><td class="l">Qwen3.6-35B-A3B</td><td>71.9±1.9</td><td>56.7±2.0</td><td>83.4±1.8</td><td>97.3±0.6</td><td>79.4±2.3</td><td>4.7</td><td>27,554</td></tr>
+        <tr class="grp"><td colspan="8">UPPER BOUNDS</td></tr>
+        <tr><td class="l">Qwen3.5-397B-A17B</td><td>75.8±1.5</td><td>64.1±1.7</td><td>84.6±1.6</td><td>96.2±0.8</td><td>86.9±1.8</td><td>6.0</td><td>15,223</td></tr>
+        <tr><td class="l">Gemini 3.1 Pro</td><td>80.2±1.2</td><td>66.5±1.3</td><td>88.2±1.2</td><td>98.0±0.5</td><td>90.3±1.5</td><td>4.5</td><td>13,814</td></tr>
+        <tr><td class="l">Claude Opus 5</td><td>87.1±1.0</td><td><b>74.8</b>±1.1</td><td>93.1±1.0</td><td>98.6±0.4</td><td>95.8±1.2</td><td>11.6</td><td>78,763</td></tr>
+        <tr class="grp"><td colspan="8">OUR METHOD</td></tr>
+        <tr class="ours"><td class="l">WEDirector (Ours)</td><td><b>88.4</b>±2.1</td><td>74.6±2.3</td><td><b>94.0</b>±2.0</td><td><b>98.8</b>±0.5</td><td><b>96.7</b>±1.8</td><td><b>3.1</b></td><td><b>2,377</b></td></tr>
+      </tbody>
+    </table>
+    <p class="tbl-note">Common-harness evaluation; our 9B policy also runs against the native stacks below.</p>
+  </div>
+
+  <div class="results-split reveal">
+    <!-- native systems -->
+    <div class="tbl-wrap">
+      <table class="tbl mono">
+        <thead><tr><th class="l">NATIVE SYSTEM</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>MIN/MIN↓</th><th>$/MIN↓</th></tr></thead>
+        <tbody>
+          <tr><td class="l">Crayotter</td><td>81.6</td><td>67.8</td><td>89.1</td><td>94.2</td><td>91.6</td><td>8.6</td><td>0.97</td></tr>
+          <tr><td class="l">VideoAgent</td><td>78.4</td><td>65.2</td><td>86.7</td><td>93.5</td><td>88.7</td><td>10.4</td><td>0.58</td></tr>
+          <tr class="ours"><td class="l">WEDirector</td><td><b>88.4</b></td><td><b>74.6</b></td><td><b>94.0</b></td><td><b>98.8</b></td><td><b>96.7</b></td><td><b>2.1</b></td><td><b>0.09</b></td></tr>
+        </tbody>
+      </table>
+      <p class="tbl-note">Task-matched native systems, rerun from the same script, source pool, duration and aspect ratio.</p>
+    </div>
+
+    <!-- human eval -->
+    <div class="tbl-wrap">
+      <table class="tbl mono">
+        <thead><tr><th class="l">HUMAN MOS (1–5)</th><th>THEME</th><th>RICH</th><th>NARR</th><th>SMOOTH</th><th>VISUAL</th><th>OVERALL</th></tr></thead>
+        <tbody>
+          <tr><td class="l">Crayotter</td><td>3.58</td><td>3.42</td><td>3.35</td><td>3.48</td><td>3.55</td><td>3.48</td></tr>
+          <tr><td class="l">VideoAgent</td><td>3.46</td><td>3.60</td><td>3.30</td><td>3.42</td><td>3.52</td><td>3.46</td></tr>
+          <tr class="ours"><td class="l">WEDirector</td><td><b>4.45</b></td><td><b>4.32</b></td><td><b>4.58</b></td><td><b>4.52</b></td><td><b>4.38</b></td><td><b>4.56</b></td></tr>
+        </tbody>
+      </table>
+      <p class="tbl-note">Blinded human evaluation · 20 held-out cases per system · 3 qualified raters.</p>
+    </div>
+  </div>
+
+  <!-- training progression -->
+  <div class="results-stack reveal">
+    <figure class="fig-card vf">
+      <img src="assets/img/metrics.webp" alt="Training progression on SCF, VNSM, LHC" loading="lazy">
+      <figcaption class="mono">SFT → RUNTIME-VERIFIED RFT → GUIDED TURN-OPD → TRAJECTORY-LEVEL DAPO</figcaption>
+    </figure>
+    <div class="conclusion">
+      <h3 class="mono">READING&nbsp;THE&nbsp;NUMBERS <span class="cn-sub2"></span></h3>
+      <div class="c-item"><span class="c-key mono">①</span><p><b>Scaling alone does not specialize.</b> A 35B base still trails by 2.5 VNSM; even Gemini 3.1 Pro trails WEDirector on all five metrics (8.2 SCF, 8.1 VNSM). The gap is closed by task-specific post-training, not capacity.</p></div>
+      <div class="c-item"><span class="c-key mono">②</span><p><b>On par with Claude Opus 5 — at 33.1× fewer tokens.</b> Better on SCF (+1.3), TPR (+0.9), LHC (+0.2), ERY (+0.9), −0.2 on VNSM; every metric within 1.3 points, with 97.0% fewer generated tokens and 73.3% fewer calls per output minute.</p></div>
+      <div class="c-item"><span class="c-key mono">③</span><p><b>Native-stack advantage holds end-to-end.</b> +6.8 SCF over Crayotter and +10.0 over VideoAgent, while running 4.1× / 5.0× faster at 10.8× / 6.4× lower cost — and humans prefer it on every dimension (4.56 vs 3.48 overall).</p></div>
+      <div class="c-item"><span class="c-key mono">④</span><p><b>Every training stage pays rent.</b> SFT buys reliability (+17.2 ERY), RFT the largest semantic jump, Turn-OPD aligns student states, DAPO closes what remains — monotonic across all five metrics.</p></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════ EVAL SANDBOX ══════════════ -->
+<section class="section" id="eval">
+  <div class="section-head reveal">
+    <div class="tag mono">EVALUATION&nbsp;SANDBOX</div>
+    <h2>Scores With Evidence <span class="cn-sub"></span></h2>
+    <p>A finished film is sampled uniformly per shot; the harness confirms keyframes as visual
+       evidence and runs its analysis toolchain — layout, saliency, legibility, motion-overlap —
+       before the held-out Claude Opus 5 judge scores two rubric dimensions:
+       <b>visual_impact</b>  and <b>clarity</b> , each with detailed
+       reasoning and cited frames.</p>
+  </div>
+
+  <div class="eval reveal" id="evalBox">
+    <div class="deck-bar">
+      <span class="rec"><i></i>EVAL</span>
+      <span class="mono deck-title">FROZEN&nbsp;HARNESS · v2.3</span>
+      <span class="mono deck-session" id="evalSess">CASE&nbsp;#0042</span>
+      <span class="mono deck-clock" id="evalClock">00:00:00:00</span>
+    </div>
+    <div class="eval-body">
+      <div class="eval-left">
+        <div class="col-label mono">INPUT · 被评影片</div>
+        <div class="eval-video">
+          <video id="evalVideo" src="assets/videos/eval-demo.mp4" muted loop playsinline autoplay></video>
+          <span class="mono eval-vtag">final_cut.mp4 · 16:58 · 21 shots</span>
+        </div>
+        <div class="eval-strip" id="evalStrip"></div>
+        <div class="eval-strip-label mono">UNIFORM SHOT SAMPLING · 逐镜头均匀抽帧</div>
+      </div>
+      <div class="eval-right">
+        <div class="col-label mono">SANDBOX · HELD-OUT JUDGE · CLAUDE OPUS 5</div>
+        <div class="eval-term" id="evalTerm"></div>
+        <div class="eval-tiles" id="evalTiles"></div>
+      </div>
+    </div>
+    <div class="eval-scores" id="evalScores">
+      <div class="edim" id="dimVisual">
+        <div class="ed-head">
+          <div class="ed-name"><h4>VISUAL_IMPACT</h4><span>视觉表现力 · 布局 / 美观度 / 吸引力</span></div>
+          <div class="ed-score"><b>8.8</b><span>/10</span></div>
+        </div>
+        <div class="es-bar"><i style="--w:88%"></i></div>
+        <p class="ed-reason">构图遵循三分法，主体稳定处于视觉重心；暖棕复古色调全片统一，特写与中景交替避免视觉疲劳，转场节奏贴合旁白呼吸感。扣分项：S11 叠化时长略拖。</p>
+        <div class="ed-evi">
+          <figure><img src="assets/img/eval/tile1.jpg" alt="evidence tile 1"><figcaption class="mono">tile#1 · 构图重心</figcaption></figure>
+          <figure><img src="assets/img/eval/tile2.jpg" alt="evidence tile 2"><figcaption class="mono">tile#2 · 主体显著性</figcaption></figure>
+        </div>
+      </div>
+      <div class="edim" id="dimClarity">
+        <div class="ed-head">
+          <div class="ed-name"><h4>CLARITY</h4><span>信息清晰度 · 文字可读 / 动效不干扰</span></div>
+          <div class="ed-score"><b>9.2</b><span>/10</span></div>
+        </div>
+        <div class="es-bar"><i style="--w:92%"></i></div>
+        <p class="ed-reason">字幕与背景对比度 7.2:1，全片无文字溢出与遮挡；关键信息均与图示动画同步出现，动效未干扰正文阅读；S07 信息密度偏高，但仍在可读阈值之内。</p>
+        <div class="ed-evi">
+          <figure><img src="assets/img/eval/tile3.jpg" alt="evidence tile 3"><figcaption class="mono">tile#3 · 字幕可读性</figcaption></figure>
+          <figure><img src="assets/img/eval/tile4.jpg" alt="evidence tile 4"><figcaption class="mono">tile#4 · 动效无遮挡</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <figure class="fig-card vf fig-wide reveal" style="margin-top:26px">
+    <img src="assets/img/casestudy.webp" alt="Auditable VNSM evaluator path" loading="lazy">
+    <figcaption class="mono">FIG.6 — AUDITABLE EVALUATOR PATH: SHOT PACKET → 4 UNIFORMLY SAMPLED FRAMES → CITED EVIDENCE → ANCHORED JSON SCORE</figcaption>
+  </figure>
+</section>
+
+<!-- ══════════════ VERSUS ══════════════ -->
+<section class="section" id="versus">
+  <div class="section-head reveal">
+    <div class="tag mono">HEAD-TO-HEAD</div>
+    <h2>One Script, Two Cuts <span class="cn-sub"></span></h2>
+    <p>Four held-out scripts, each produced by both systems from the same script, source pool,
+       duration and aspect ratio. Pick a domain — both sides switch together; press play, both rolls run in sync.</p>
+  </div>
+
+  <div class="vs reveal" id="vsBox">
+    <div class="vs-tabs mono" id="vsTabs">
+      <button class="vs-tab on" data-pair="tech">科技数码<span>AI Changes Life</span></button>
+      <button class="vs-tab" data-pair="finance">财经商业<span>Why Money Feels Scarce</span></button>
+      <button class="vs-tab" data-pair="nature">自然科学<span>Why We Explore Space</span></button>
+      <button class="vs-tab" data-pair="society">社会人文<span>Modern Loneliness</span></button>
+    </div>
+    <div class="vs-stage">
+      <div class="vs-side ours-side">
+        <div class="vs-tag mono"><span class="vs-dot teal"></span>WEDIRECTOR · OURS</div>
+        <div class="vs-frame"><video id="vsOurs" playsinline preload="metadata"></video></div>
+      </div>
+      <div class="vs-mid">
+        <button class="vs-play" id="vsPlay" aria-label="play both"><span class="pp">▶</span></button>
+        <span class="vs-label mono">SYNCED</span>
+      </div>
+      <div class="vs-side">
+        <div class="vs-tag mono"><span class="vs-dot gray"></span>CRAYOTTER</div>
+        <div class="vs-frame dim-frame"><video id="vsTheirs" playsinline preload="metadata"></video></div>
+      </div>
+    </div>
+    <div class="vs-caption mono" id="vsCaption">SCRIPT · 人工智能如何改变生活</div>
+  </div>
+</section>
+
+<!-- ══════════════ CITE ══════════════ -->
+<section class="section" id="cite">
+  <div class="section-head reveal">
+    <div class="tag mono">CITE</div>
+    <h2>Citation <span class="cn-sub"></span></h2>
+  </div>
+  <div class="bib reveal" id="bibBox">
+    <div class="bib-bar">
+      <span class="mono">BIBTEX</span>
+      <button class="btn-mini mono" id="copyBib">COPY</button>
+    </div>
+<pre class="mono" id="bibText">@article{mu2026wedirector,
+  title   = {WEdirector: One Agent Runs the Whole Editing Room},
+  author  = {Mu, Chenyu and others},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}</pre>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-brand"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">WE<span class="accent">Director</span></span>
+    <span class="footer-note mono">AUTONOMOUS LONG-HORIZON TOOL AGENT · SCRIPT&nbsp;&rarr;&nbsp;SCREEN</span>
+  </div>
+  <div class="footer-fade" aria-hidden="true"></div>
+</footer>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="close">✕</button>
+  <video id="lightboxVideo" controls playsinline></video>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
