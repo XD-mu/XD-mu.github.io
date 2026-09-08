@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   WEDirector · THE CUTTING ROOM — interactions v3
+   WevisionCut · THE CUTTING ROOM — interactions v3
    chat-driven demo: autonomous first cut → conversational revision
    ═══════════════════════════════════════════════════════════════ */
 (() => {
@@ -198,7 +198,7 @@ if (stream && nle) {
   function agentMsg(turnLabel) {
     const m = document.createElement("div");
     m.className = "msg agent";
-    m.innerHTML = `<div class="msg-body"><div class="msg-who mono">WEDIRECTOR <span class="turn-no">${turnLabel || ""}</span></div></div>`;
+    m.innerHTML = `<div class="msg-body"><div class="msg-who mono">WevisionCut <span class="turn-no">${turnLabel || ""}</span></div></div>`;
     stream.appendChild(m); scrollStream();
     agentBody = m.querySelector(".msg-body");
     return agentBody;
