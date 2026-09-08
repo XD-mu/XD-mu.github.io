@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEDirector: One Agent Runs the Whole Editing Room</title>
-<meta name="description" content="WEDirector trains a single role-routed policy to plan, retrieve, narrate, compose, inspect and repair — delivering finished long-form videos from a bare narration script.">
-<link rel="canonical" href="https://xd-mu.github.io/WEDirector/">
+<title>WevisionCut: One Agent Runs the Whole Editing Room</title>
+<meta name="description" content="WevisionCut trains a single role-routed policy to plan, retrieve, narrate, compose, inspect and repair — delivering finished long-form videos from a bare narration script.">
+<link rel="canonical" href="https://xd-mu.github.io/WevisionCut/">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://xd-mu.github.io/WEDirector/">
-<meta property="og:title" content="WEDirector: One Agent Runs the Whole Editing Room">
+<meta property="og:url" content="https://xd-mu.github.io/WevisionCut/">
+<meta property="og:title" content="WevisionCut: One Agent Runs the Whole Editing Room">
 <meta property="og:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
-<meta property="og:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+<meta property="og:image" content="https://xd-mu.github.io/WevisionCut/assets/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="WEDirector: One Agent Runs the Whole Editing Room">
+<meta name="twitter:title" content="WevisionCut: One Agent Runs the Whole Editing Room">
 <meta name="twitter:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
-<meta name="twitter:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+<meta name="twitter:image" content="https://xd-mu.github.io/WevisionCut/assets/img/og-cover.jpg">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -157,7 +157,7 @@
   <div class="deck reveal" id="deck">
     <div class="deck-bar">
       <span class="rec"><i></i>REC</span>
-      <span class="mono deck-title">WEDIRECTOR · AGENT&nbsp;DECK</span>
+      <span class="mono deck-title">WevisionCut · AGENT&nbsp;DECK</span>
       <span class="mono deck-session" id="deckSession">TAKE&nbsp;A7F2</span>
       <span class="mono deck-clock" id="deckClock">00:00:00:00</span>
     </div>
@@ -235,13 +235,13 @@
   </div>
 
   <figure class="fig-card vf reveal">
-    <img src="assets/img/pipeline.webp" alt="WEDirector pipeline overview" loading="lazy">
+    <img src="assets/img/pipeline.webp" alt="WevisionCut pipeline overview" loading="lazy">
     <figcaption class="mono">FIG.1 — EDITING AS A SEQUENTIAL DECISION PROCESS · DATA ENGINE (INVERSION + VERIFIED REPLAY) · TRAINING PROGRESSION</figcaption>
   </figure>
 
   <div class="method-grid reveal">
     <figure class="fig-card vf">
-      <img src="assets/img/overview.webp" alt="WEDirector architecture" loading="lazy">
+      <img src="assets/img/overview.webp" alt="WevisionCut architecture" loading="lazy">
       <figcaption class="mono">FIG.2 — UNIFIED ARCHITECTURE · ONE POLICY, FIVE ROLES</figcaption>
     </figure>
     <div class="roles">
@@ -306,7 +306,7 @@
         <tr><td class="l">Gemini 3.1 Pro</td><td>80.2±1.2</td><td>66.5±1.3</td><td>88.2±1.2</td><td>98.0±0.5</td><td>90.3±1.5</td><td>4.5</td><td>13,814</td></tr>
         <tr><td class="l">Claude Opus 5</td><td>87.1±1.0</td><td><b>74.8</b>±1.1</td><td>93.1±1.0</td><td>98.6±0.4</td><td>95.8±1.2</td><td>11.6</td><td>78,763</td></tr>
         <tr class="grp"><td colspan="8">OUR METHOD</td></tr>
-        <tr class="ours"><td class="l">WEDirector (Ours)</td><td><b>88.4</b>±2.1</td><td>74.6±2.3</td><td><b>94.0</b>±2.0</td><td><b>98.8</b>±0.5</td><td><b>96.7</b>±1.8</td><td><b>3.1</b></td><td><b>2,377</b></td></tr>
+        <tr class="ours"><td class="l">WevisionCut (Ours)</td><td><b>88.4</b>±2.1</td><td>74.6±2.3</td><td><b>94.0</b>±2.0</td><td><b>98.8</b>±0.5</td><td><b>96.7</b>±1.8</td><td><b>3.1</b></td><td><b>2,377</b></td></tr>
       </tbody>
     </table>
     <p class="tbl-note">Common-harness evaluation; our 9B policy also runs against the native stacks below.</p>
@@ -320,7 +320,7 @@
         <tbody>
           <tr><td class="l">Crayotter</td><td>81.6</td><td>67.8</td><td>89.1</td><td>94.2</td><td>91.6</td><td>8.6</td><td>0.97</td></tr>
           <tr><td class="l">VideoAgent</td><td>78.4</td><td>65.2</td><td>86.7</td><td>93.5</td><td>88.7</td><td>10.4</td><td>0.58</td></tr>
-          <tr class="ours"><td class="l">WEDirector</td><td><b>88.4</b></td><td><b>74.6</b></td><td><b>94.0</b></td><td><b>98.8</b></td><td><b>96.7</b></td><td><b>2.1</b></td><td><b>0.09</b></td></tr>
+          <tr class="ours"><td class="l">WevisionCut</td><td><b>88.4</b></td><td><b>74.6</b></td><td><b>94.0</b></td><td><b>98.8</b></td><td><b>96.7</b></td><td><b>2.1</b></td><td><b>0.09</b></td></tr>
         </tbody>
       </table>
       <p class="tbl-note">Task-matched native systems, rerun from the same script, source pool, duration and aspect ratio.</p>
@@ -333,7 +333,7 @@
         <tbody>
           <tr><td class="l">Crayotter</td><td>3.58</td><td>3.42</td><td>3.35</td><td>3.48</td><td>3.55</td><td>3.48</td></tr>
           <tr><td class="l">VideoAgent</td><td>3.46</td><td>3.60</td><td>3.30</td><td>3.42</td><td>3.52</td><td>3.46</td></tr>
-          <tr class="ours"><td class="l">WEDirector</td><td><b>4.45</b></td><td><b>4.32</b></td><td><b>4.58</b></td><td><b>4.52</b></td><td><b>4.38</b></td><td><b>4.56</b></td></tr>
+          <tr class="ours"><td class="l">WevisionCut</td><td><b>4.45</b></td><td><b>4.32</b></td><td><b>4.58</b></td><td><b>4.52</b></td><td><b>4.38</b></td><td><b>4.56</b></td></tr>
         </tbody>
       </table>
       <p class="tbl-note">Blinded human evaluation · 20 held-out cases per system · 3 qualified raters.</p>
@@ -348,7 +348,7 @@
     </figure>
     <div class="conclusion">
       <h3 class="mono">READING&nbsp;THE&nbsp;NUMBERS <span class="cn-sub2"></span></h3>
-      <div class="c-item"><span class="c-key mono">①</span><p><b>Scaling alone does not specialize.</b> A 35B base still trails by 2.5 VNSM; even Gemini 3.1 Pro trails WEDirector on all five metrics (8.2 SCF, 8.1 VNSM). The gap is closed by task-specific post-training, not capacity.</p></div>
+      <div class="c-item"><span class="c-key mono">①</span><p><b>Scaling alone does not specialize.</b> A 35B base still trails by 2.5 VNSM; even Gemini 3.1 Pro trails WevisionCut on all five metrics (8.2 SCF, 8.1 VNSM). The gap is closed by task-specific post-training, not capacity.</p></div>
       <div class="c-item"><span class="c-key mono">②</span><p><b>On par with Claude Opus 5 — at 33.1× fewer tokens.</b> Better on SCF (+1.3), TPR (+0.9), LHC (+0.2), ERY (+0.9), −0.2 on VNSM; every metric within 1.3 points, with 97.0% fewer generated tokens and 73.3% fewer calls per output minute.</p></div>
       <div class="c-item"><span class="c-key mono">③</span><p><b>Native-stack advantage holds end-to-end.</b> +6.8 SCF over Crayotter and +10.0 over VideoAgent, while running 4.1× / 5.0× faster at 10.8× / 6.4× lower cost — and humans prefer it on every dimension (4.56 vs 3.48 overall).</p></div>
       <div class="c-item"><span class="c-key mono">④</span><p><b>Every training stage pays rent.</b> SFT buys reliability (+17.2 ERY), RFT the largest semantic jump, Turn-OPD aligns student states, DAPO closes what remains — monotonic across all five metrics.</p></div>
@@ -444,7 +444,7 @@
     </div>
     <div class="vs-stage">
       <div class="vs-side ours-side">
-        <div class="vs-tag mono"><span class="vs-dot teal"></span>WEDIRECTOR · OURS</div>
+        <div class="vs-tag mono"><span class="vs-dot teal"></span>WevisionCut · OURS</div>
         <div class="vs-frame"><video id="vsOurs" playsinline preload="metadata"></video></div>
       </div>
       <div class="vs-mid">
@@ -471,8 +471,8 @@
       <span class="mono">BIBTEX</span>
       <button class="btn-mini mono" id="copyBib">COPY</button>
     </div>
-<pre class="mono" id="bibText">@article{mu2026wedirector,
-  title   = {WEdirector: One Agent Runs the Whole Editing Room},
+<pre class="mono" id="bibText">@article{mu2026WevisionCut,
+  title   = {WevisionCut: One Agent Runs the Whole Editing Room},
   author  = {Mu, Chenyu and others},
   journal = {arXiv preprint arXiv:XXXX.XXXXX},
   year    = {2026}
