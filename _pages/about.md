@@ -29,7 +29,7 @@ I am expected to receive my Master's degree from the School of Electronic Engine
 <div class='paper-box-text' markdown="1">
 
 -	`Chenyu Mu`, Wenming Weng, Xingsong Ye, Hao Yu, Yuxi Li, Jun He, Yazhen Xie, Chong Sun, Chen Li, Jing Lyu, Erkun Yang<sup>†</sup>, Cheng Deng<sup>†</sup>. WEDirector: Training an Autonomous Long-Horizon Tool Agent for End-to-End Script-to-Video Production.
-[[Project Page]](https://xd-mu.github.io/WEDirector/)
+[[Project Page]](https://xd-mu.github.io/WevisionCut/)
 
 </div>
 </div>
