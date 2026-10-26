@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WevisionCut: One Agent Runs the Whole Editing Room</title>
-<meta name="description" content="WevisionCut trains a single role-routed policy to plan, retrieve, narrate, compose, inspect and repair — delivering finished long-form videos from a bare narration script.">
-<link rel="canonical" href="https://xd-mu.github.io/WEDirector/">
+<title>WeVisCut: The Whole Editing Room in One Agent — From Narration to Long-Form Video</title>
+<meta name="description" content="WeVisCut connects tool execution with policy learning for long-form script-to-video production. A single 9B policy is trained on 134,771 examples recovered from 3,750 finished video projects.">
+<link rel="canonical" href="https://xd-mu.github.io/WevisionCut/">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://xd-mu.github.io/WEDirector/">
-<meta property="og:title" content="WevisionCut: One Agent Runs the Whole Editing Room">
-<meta property="og:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
-<meta property="og:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+<meta property="og:url" content="https://xd-mu.github.io/WevisionCut/">
+<meta property="og:title" content="WeVisCut: The Whole Editing Room in One Agent — From Narration to Long-Form Video">
+<meta property="og:description" content="A single 9B policy learns long-form script-to-video production from executable supervision, with editing inversion, verified replay and a 100-task benchmark.">
+<meta property="og:image" content="https://xd-mu.github.io/WevisionCut/assets/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="WevisionCut: One Agent Runs the Whole Editing Room">
-<meta name="twitter:description" content="A single role-routed policy plans, retrieves, narrates, composes, inspects and repairs — delivering finished long-form videos from a bare narration script.">
-<meta name="twitter:image" content="https://xd-mu.github.io/WEDirector/assets/img/og-cover.jpg">
+<meta name="twitter:title" content="WeVisCut: The Whole Editing Room in One Agent — From Narration to Long-Form Video">
+<meta name="twitter:description" content="A single 9B policy learns long-form script-to-video production from executable supervision, with editing inversion, verified replay and a 100-task benchmark.">
+<meta name="twitter:image" content="https://xd-mu.github.io/WevisionCut/assets/img/og-cover.jpg">
 
 <!-- <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -33,7 +33,7 @@
 <!-- ══════════════ NAV ══════════════ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">WE<span class="accent">VisionCut</span></a>
+    <a class="brand" href="#top"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">We<span class="accent">VisCut</span></a>
     <div class="nav-links">
       <a href="#demo">Demo</a>
       <a href="#data">Data</a>
@@ -82,19 +82,17 @@
 
   <div class="hero-content">
     <p class="hero-kicker mono reveal">AUTONOMOUS&nbsp;SCRIPT&nbsp;→&nbsp;SCREEN&nbsp;·&nbsp;LONG-HORIZON&nbsp;TOOL&nbsp;AGENT</p>
-    <h1 class="reveal">WE<em>VisionCut</em></h1>
-    <p class="hero-title reveal">One Agent Runs the Whole Editing Room</p>
+    <h1 class="reveal"><em>WeVisCut</em></h1>
+    <p class="hero-title reveal">The Whole Editing Room in One Agent<br>From Narration to Long-Form Video</p>
 
-    <p class="hero-authors reveal">Chenyu Mu<sup>1,2</sup>,&ensp;Wenming Weng<sup>2</sup>,&ensp;Xingsong Ye<sup>2</sup>,&ensp;Hao Yu<sup>2</sup>,&ensp;Yuxi Li<sup>2</sup>,&ensp;Jun He<sup>2</sup>,&ensp;Yazhen Xie<sup>2</sup>,&ensp;Chong Sun<sup>2</sup>,&ensp;Chen Li<sup>2</sup>,&ensp;Jing LYU<sup>2</sup>,&ensp;Erkun Yang<sup>1,✉</sup>,&ensp;Cheng Deng<sup>1,✉</sup></p>
+    <p class="hero-authors reveal">Chenyu Mu<sup>1,2</sup>,&ensp;Wenming Weng<sup>2</sup>,&ensp;Qinrui Wang<sup>2</sup>,&ensp;Xingsong Ye<sup>2</sup>,&ensp;Hao Yu<sup>2</sup>,&ensp;Jun He<sup>2</sup>,&ensp;Chong Sun<sup>2,✉</sup>,&ensp;Chen Li<sup>2</sup>,&ensp;Jing LYU<sup>2</sup>,&ensp;Erkun Yang<sup>1,✉</sup>,&ensp;Cheng Deng<sup>1</sup></p>
     <p class="hero-affil reveal"><sup>1</sup>Xidian University&emsp;<sup>2</sup>WeChat Vision, Tencent Inc.&emsp;<span class="authors-note">✉ corresponding authors</span></p>
 
-    <p class="hero-abstract reveal">One 9B policy runs the whole cutting room: it segments the script, plans shots,
-      retrieves visuals, synthesizes narration, composes the timeline, inspects every render —
-      and repairs only what failed. <b>No human in the loop.</b></p>
+    <p class="hero-abstract reveal">WeVisCut connects tool execution with policy learning for long-form script-to-video production. Editing inversion and verified replay recover executable supervision from 3,750 finished projects, yielding 134,771 training examples for a single 9B policy. On 100 held-out tasks, it achieves a 90.5 overall score and uses about <b>33× fewer generated tokens</b> than Claude Opus 5 per successful output minute.</p>
 
     <!-- ✏️ 资源链接：把 href="#" 替换为真实地址 -->
     <div class="hero-res reveal">
-      <a class="res-btn res-hf" href="https://huggingface.co/tencent/WevisionCut" aria-label="Model on Hugging Face">
+      <a class="res-btn res-hf" href="https://huggingface.co/tencent/WeVisCut" aria-label="Model on Hugging Face">
         <svg viewBox="0 0 95 88" fill="none" aria-hidden="true">
           <path fill="#FFD21E" d="M47.21 76.5a34.75 34.75 0 1 0 0-69.5 34.75 34.75 0 0 0 0 69.5Z"/>
           <path fill="#FF9D0B" d="M81.96 41.75a34.75 34.75 0 1 0-69.5 0 34.75 34.75 0 0 0 69.5 0Zm-73.5 0a38.75 38.75 0 1 1 77.5 0 38.75 38.75 0 0 1-77.5 0Z"/>
@@ -160,7 +158,7 @@
   <div class="deck reveal" id="deck">
     <div class="deck-bar">
       <span class="rec"><i></i>REC</span>
-      <span class="mono deck-title">WevisionCut · AGENT&nbsp;DECK</span>
+      <span class="mono deck-title">WeVisCut · AGENT&nbsp;DECK</span>
       <span class="mono deck-session" id="deckSession">TAKE&nbsp;A7F2</span>
       <span class="mono deck-clock" id="deckClock">00:00:00:00</span>
     </div>
@@ -214,17 +212,16 @@
   <div class="section-head reveal">
     <div class="tag mono">DATA&nbsp;ENGINE</div>
     <h2>Editing Inversion &amp; Verified Replay <span class="cn-sub"></span></h2>
-    <p>Finished videos hide the process that made them. We invert them back into timestamped intent,
-       then replay that intent through the real toolchain — executable supervision, grounded in real tool returns.</p>
+    <p>We recover editing intent from finished narration-driven videos, then replay it with production tools. The four-stage pipeline adds observation, bounded repair and trajectory materialization to produce executable supervision.</p>
   </div>
   <figure class="fig-card vf fig-wide reveal">
-    <img src="assets/img/data.webp" alt="Editing inversion and verified replay" loading="lazy">
-    <figcaption class="mono">3,750 FINISHED PROJECTS → INVERTED INTENT → VERIFIED REPLAY → 134,771 ROLE-ROUTED SAMPLES</figcaption>
+    <img src="assets/img/data.webp" alt="Four-stage executable data construction pipeline" loading="lazy">
+    <figcaption class="mono">FIG.3 — EDITING INVERSION → VERIFIED REPLAY → OBSERVE–REFLECT–REPAIR → TRAJECTORY MATERIALIZATION</figcaption>
   </figure>
   <div class="data-stats reveal">
-    <div class="dstat"><b class="mono"><span class="count" data-to="3750" data-dec="0">0</span></b><span>aligned finished projects</span></div>
-    <div class="dstat"><b class="mono"><span class="count" data-to="134771" data-dec="0">0</span></b><span>role-routed training samples</span></div>
-    <div class="dstat"><b class="mono"><span class="count" data-to="48" data-dec="0">0</span></b><span>max autonomous steps / run</span></div>
+    <div class="dstat"><b class="mono"><span class="count" data-to="3750" data-dec="0">0</span></b><span>finished video projects</span></div>
+    <div class="dstat"><b class="mono"><span class="count" data-to="134771" data-dec="0">0</span></b><span>training examples</span></div>
+    <div class="dstat"><b class="mono"><span class="count" data-to="100" data-dec="0">0</span></b><span>held-out evaluation tasks</span></div>
   </div>
 </section>
 
@@ -232,27 +229,26 @@
 <section class="section" id="method">
   <div class="section-head reveal">
     <div class="tag mono">METHOD</div>
-    <h2>One Policy, the Whole Cutting Room <span class="cn-sub"></span></h2>
-    <p>Script-to-video is formulated as a stateful, long-horizon tool-use problem.
-       A single role-routed policy closes the loop between planning, execution, observation, inspection and repair.</p>
+    <h2>One Shared Policy, Stateful Tool Execution <span class="cn-sub"></span></h2>
+    <p>WeVisCut maintains shared production state across tool calls. Runtime feedback informs subsequent decisions, inspection, bounded repair and replanning instead of following a fixed open-loop workflow.</p>
   </div>
 
   <figure class="fig-card vf reveal">
-    <img src="assets/img/pipeline.webp" alt="WevisionCut pipeline overview" loading="lazy">
-    <figcaption class="mono">FIG.1 — EDITING AS A SEQUENTIAL DECISION PROCESS · DATA ENGINE (INVERSION + VERIFIED REPLAY) · TRAINING PROGRESSION</figcaption>
+    <img src="assets/img/pipeline.webp" alt="WeVisCut system overview from script planning through video delivery" loading="lazy">
+    <figcaption class="mono">FIG.1 — WEVISCUT OVERVIEW · PLANNING · RETRIEVAL · COMPOSITION · INSPECTION · REPAIR</figcaption>
   </figure>
 
   <div class="method-grid reveal">
     <figure class="fig-card vf">
-      <img src="assets/img/overview.webp" alt="WevisionCut architecture" loading="lazy">
-      <figcaption class="mono">FIG.2 — UNIFIED ARCHITECTURE · ONE POLICY, FIVE ROLES</figcaption>
+      <img src="assets/img/overview.webp" alt="WeVisCut framework linking data construction, policy training and inference" loading="lazy">
+      <figcaption class="mono">WEVISCUT FRAMEWORK — DATA CONSTRUCTION → TRAINING → INFERENCE · CLOSED-LOOP TOOL EXECUTION</figcaption>
     </figure>
     <div class="roles">
-      <div class="role"><span class="role-no mono">01</span><div><b>Director</b><p>Owns the brief, the state and the final call.</p><span class="role-cn"></span></div></div>
-      <div class="role"><span class="role-no mono">02</span><div><b>Screenwriter</b><p>Segments narration into timestamped beats.</p><span class="role-cn"></span></div></div>
-      <div class="role"><span class="role-no mono">03</span><div><b>Storyboard Artist</b><p>Plans shots, retrieves visuals, synthesizes speech.</p><span class="role-cn"></span></div></div>
-      <div class="role"><span class="role-no mono">04</span><div><b>Editor</b><p>Composes timeline, effects and music.</p><span class="role-cn"></span></div></div>
-      <div class="role"><span class="role-no mono">05</span><div><b>Inspector</b><p>Judges every dimension, routes localized repair.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">01</span><div><b>Orchestrator</b><p>Selects legal tools from the current production state and coordinates planning, execution, inspection and delivery.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">02</span><div><b>Generator</b><p>Creates scripts and shot plans, retrieves visual and audio assets, and composes narration, decorations and timeline edits.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">03</span><div><b>Critic</b><p>Inspects returned artifacts against quality dimensions, identifies failures and routes targeted repair.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">S</span><div><b>Shared Production State</b><p>Validated tool returns update canonical state and artifacts, so each next action uses the latest run status.</p><span class="role-cn"></span></div></div>
+      <div class="role"><span class="role-no mono">↻</span><div><b>Closed-Loop Repair</b><p>Local fixes preserve successful work; inspection evidence feeds back into the policy for the next decision.</p><span class="role-cn"></span></div></div>
     </div>
   </div>
 </section>
@@ -290,43 +286,43 @@
   <div class="section-head reveal">
     <div class="tag mono">RESULTS</div>
     <h2>Small Policy, Frontier Delivery <span class="cn-sub"></span></h2>
-    <p>100 held-out cases · 5 independent runs · 5 registered metrics (mean ± std) + production cost per output minute.</p>
+    <p>100 held-out script-to-video tasks · 5 independent runs · 5 metrics (mean ± std), descriptive Overall score and cost per successful output minute.</p>
   </div>
 
   <!-- main table -->
   <div class="tbl-wrap reveal">
     <table class="tbl mono" id="mainTable">
       <thead>
-        <tr><th class="l">METHOD</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>CALLS/MIN↓</th><th>TOKEN COST↓</th></tr>
+        <tr><th class="l">METHOD</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>OVERALL↑</th><th>CALLS/SUCCESS MIN↓</th><th>TOKENS/SUCCESS MIN↓</th></tr>
       </thead>
       <tbody>
-        <tr class="grp"><td colspan="8">BASE MODELS · NATIVE CAPABILITY</td></tr>
-        <tr><td class="l">Qwen3.5-9B</td><td>69.8±1.6</td><td>59.2±1.8</td><td>79.5±1.7</td><td>93.7±0.8</td><td>70.4±2.1</td><td>3.1</td><td>11,883</td></tr>
-        <tr><td class="l">Qwen3.6-27B</td><td>72.6±1.4</td><td>59.7±1.6</td><td>80.1±1.5</td><td>95.1±0.7</td><td>72.1±1.9</td><td>3.9</td><td>6,742</td></tr>
-        <tr><td class="l">Qwen3.6-35B-A3B</td><td>71.9±1.9</td><td>56.7±2.0</td><td>83.4±1.8</td><td>97.3±0.6</td><td>79.4±2.3</td><td>4.7</td><td>27,554</td></tr>
-        <tr class="grp"><td colspan="8">UPPER BOUNDS</td></tr>
-        <tr><td class="l">Qwen3.5-397B-A17B</td><td>75.8±1.5</td><td>64.1±1.7</td><td>84.6±1.6</td><td>96.2±0.8</td><td>86.9±1.8</td><td>6.0</td><td>15,223</td></tr>
-        <tr><td class="l">Gemini 3.1 Pro</td><td>80.2±1.2</td><td>66.5±1.3</td><td>88.2±1.2</td><td>98.0±0.5</td><td>90.3±1.5</td><td>4.5</td><td>13,814</td></tr>
-        <tr><td class="l">Claude Opus 5</td><td>87.1±1.0</td><td><b>74.8</b>±1.1</td><td>93.1±1.0</td><td>98.6±0.4</td><td>95.8±1.2</td><td>11.6</td><td>78,763</td></tr>
-        <tr class="grp"><td colspan="8">OUR METHOD</td></tr>
-        <tr class="ours"><td class="l">WevisionCut (Ours)</td><td><b>88.4</b>±2.1</td><td>74.6±2.3</td><td><b>94.0</b>±2.0</td><td><b>98.8</b>±0.5</td><td><b>96.7</b>±1.8</td><td><b>3.1</b></td><td><b>2,377</b></td></tr>
+        <tr class="grp"><td colspan="9">GENERAL-PURPOSE BASELINES</td></tr>
+        <tr><td class="l">Qwen3.5-9B</td><td>69.8±1.6</td><td>59.2±1.8</td><td>79.5±1.7</td><td>93.7±0.8</td><td>70.4±2.1</td><td>74.5</td><td>3.1</td><td>11,883</td></tr>
+        <tr><td class="l">Qwen3.6-27B</td><td>72.6±1.4</td><td>59.7±1.6</td><td>80.1±1.5</td><td>95.1±0.7</td><td>72.1±1.9</td><td>75.9</td><td>3.9</td><td>6,742</td></tr>
+        <tr><td class="l">Qwen3.6-35B-A3B</td><td>71.9±1.9</td><td>56.7±2.0</td><td>83.4±1.8</td><td>97.3±0.6</td><td>79.4±2.3</td><td>77.7</td><td>4.7</td><td>27,554</td></tr>
+        <tr class="grp"><td colspan="9">REFERENCE MODELS</td></tr>
+        <tr><td class="l">Qwen3.5-397B-A17B</td><td>75.8±1.5</td><td>64.1±1.7</td><td>84.6±1.6</td><td>96.2±0.8</td><td>86.9±1.8</td><td>81.5</td><td>6.0</td><td>15,223</td></tr>
+        <tr><td class="l">Gemini 3.1 Pro</td><td>80.2±1.2</td><td>66.5±1.3</td><td>88.2±1.2</td><td>98.0±0.5</td><td>90.3±1.5</td><td>84.6</td><td>4.5</td><td>13,814</td></tr>
+        <tr><td class="l">Claude Opus 5</td><td>87.1±1.0</td><td><b>74.8</b>±1.1</td><td>93.1±1.0</td><td>98.6±0.4</td><td>95.8±1.2</td><td>89.9</td><td>11.6</td><td>78,763</td></tr>
+        <tr class="grp"><td colspan="9">OUR METHOD</td></tr>
+        <tr class="ours"><td class="l">WeVisCut (Ours)</td><td><b>88.4</b>±2.1</td><td>74.6±2.3</td><td><b>94.0</b>±2.0</td><td><b>98.8</b>±0.5</td><td><b>96.7</b>±1.8</td><td><b>90.5</b></td><td><b>3.1</b></td><td><b>2,377</b></td></tr>
       </tbody>
     </table>
-    <p class="tbl-note">Common-harness evaluation; our 9B policy also runs against the native stacks below.</p>
+    <p class="tbl-note">Common-harness results on 100 held-out tasks across five runs; Overall is the descriptive mean of the five task metrics.</p>
   </div>
 
   <div class="results-split reveal">
     <!-- native systems -->
     <div class="tbl-wrap">
       <table class="tbl mono">
-        <thead><tr><th class="l">NATIVE SYSTEM</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>MIN/MIN↓</th><th>$/MIN↓</th></tr></thead>
+        <thead><tr><th class="l">NATIVE SYSTEM</th><th>SCF↑</th><th>VNSM↑</th><th>TPR↑</th><th>LHC↑</th><th>ERY↑</th><th>OVERALL↑</th><th>WALL MIN/OUTPUT MIN↓</th><th>USD/OUTPUT MIN↓</th></tr></thead>
         <tbody>
-          <tr><td class="l">Crayotter</td><td>81.6</td><td>67.8</td><td>89.1</td><td>94.2</td><td>91.6</td><td>8.6</td><td>0.97</td></tr>
-          <tr><td class="l">VideoAgent</td><td>78.4</td><td>65.2</td><td>86.7</td><td>93.5</td><td>88.7</td><td>10.4</td><td>0.58</td></tr>
-          <tr class="ours"><td class="l">WevisionCut</td><td><b>88.4</b></td><td><b>74.6</b></td><td><b>94.0</b></td><td><b>98.8</b></td><td><b>96.7</b></td><td><b>2.1</b></td><td><b>0.09</b></td></tr>
+          <tr><td class="l">Crayotter</td><td>81.6</td><td>67.8</td><td>89.1</td><td>94.2</td><td>91.6</td><td>84.9</td><td>8.6</td><td>0.97</td></tr>
+          <tr><td class="l">VideoAgent</td><td>78.4</td><td>65.2</td><td>86.7</td><td>93.5</td><td>88.7</td><td>82.5</td><td>10.4</td><td>0.58</td></tr>
+          <tr class="ours"><td class="l">WeVisCut</td><td><b>88.4</b></td><td><b>74.6</b></td><td><b>94.0</b></td><td><b>98.8</b></td><td><b>96.7</b></td><td><b>90.5</b></td><td><b>2.1</b></td><td><b>0.09</b></td></tr>
         </tbody>
       </table>
-      <p class="tbl-note">Task-matched native systems, rerun from the same script, source pool, duration and aspect ratio.</p>
+      <p class="tbl-note">Task-matched native systems use the same script, source pool, duration and aspect ratio. Cost includes unsuccessful attempts.</p>
     </div>
 
     <!-- human eval -->
@@ -336,10 +332,10 @@
         <tbody>
           <tr><td class="l">Crayotter</td><td>3.58</td><td>3.42</td><td>3.35</td><td>3.48</td><td>3.55</td><td>3.48</td></tr>
           <tr><td class="l">VideoAgent</td><td>3.46</td><td>3.60</td><td>3.30</td><td>3.42</td><td>3.52</td><td>3.46</td></tr>
-          <tr class="ours"><td class="l">WevisionCut</td><td><b>4.45</b></td><td><b>4.32</b></td><td><b>4.58</b></td><td><b>4.52</b></td><td><b>4.38</b></td><td><b>4.56</b></td></tr>
+          <tr class="ours"><td class="l">WeVisCut</td><td><b>4.45</b></td><td><b>4.32</b></td><td><b>4.58</b></td><td><b>4.52</b></td><td><b>4.38</b></td><td><b>4.56</b></td></tr>
         </tbody>
       </table>
-      <p class="tbl-note">Blinded human evaluation · 20 held-out cases per system · 3 qualified raters.</p>
+      <p class="tbl-note">Blinded human evaluation on 100 held-out cases · 3 qualified raters · descriptive mean ratings.</p>
     </div>
   </div>
 
@@ -347,14 +343,14 @@
   <div class="results-stack reveal">
     <figure class="fig-card vf">
       <img src="assets/img/metrics.webp" alt="Training progression on SCF, VNSM, LHC" loading="lazy">
-      <figcaption class="mono">SFT → RUNTIME-VERIFIED RFT → GUIDED TURN-OPD → TRAJECTORY-LEVEL DAPO</figcaption>
+      <figcaption class="mono">FIG.5 — TRAINING PROGRESSION ON SCF, VNSM AND LHC · GUIDED-OPD → RCF-DAPO</figcaption>
     </figure>
     <div class="conclusion">
       <h3 class="mono">READING&nbsp;THE&nbsp;NUMBERS <span class="cn-sub2"></span></h3>
-      <div class="c-item"><span class="c-key mono">①</span><p><b>Scaling alone does not specialize.</b> A 35B base still trails by 2.5 VNSM; even Gemini 3.1 Pro trails WevisionCut on all five metrics (8.2 SCF, 8.1 VNSM). The gap is closed by task-specific post-training, not capacity.</p></div>
+      <div class="c-item"><span class="c-key mono">①</span><p><b>Scaling alone does not specialize.</b> The Qwen3.6-35B-A3B baseline reaches 77.7 Overall, Gemini 3.1 Pro 84.6, and WeVisCut 90.5. Task-specific post-training closes the gap beyond model scale alone.</p></div>
       <div class="c-item"><span class="c-key mono">②</span><p><b>On par with Claude Opus 5 — at 33.1× fewer tokens.</b> Better on SCF (+1.3), TPR (+0.9), LHC (+0.2), ERY (+0.9), −0.2 on VNSM; every metric within 1.3 points, with 97.0% fewer generated tokens and 73.3% fewer calls per output minute.</p></div>
       <div class="c-item"><span class="c-key mono">③</span><p><b>Native-stack advantage holds end-to-end.</b> +6.8 SCF over Crayotter and +10.0 over VideoAgent, while running 4.1× / 5.0× faster at 10.8× / 6.4× lower cost — and humans prefer it on every dimension (4.56 vs 3.48 overall).</p></div>
-      <div class="c-item"><span class="c-key mono">④</span><p><b>Every training stage pays rent.</b> SFT buys reliability (+17.2 ERY), RFT the largest semantic jump, Turn-OPD aligns student states, DAPO closes what remains — monotonic across all five metrics.</p></div>
+      <div class="c-item"><span class="c-key mono">④</span><p><b>Three training phases specialize the 9B policy.</b> Unified SFT and runtime-verified RFT initialize tool use and recovery; Guided-OPD trains recovery decisions; RCF-DAPO optimizes decision quality. Overall rises from 74.5 for the base model to 90.5.</p></div>
     </div>
   </div>
 
@@ -425,7 +421,7 @@
 
   <figure class="fig-card vf fig-wide reveal" style="margin-top:26px">
     <img src="assets/img/casestudy.webp" alt="Auditable VNSM evaluator path" loading="lazy">
-    <figcaption class="mono">FIG.6 — AUDITABLE EVALUATOR PATH: SHOT PACKET → 4 UNIFORMLY SAMPLED FRAMES → CITED EVIDENCE → ANCHORED JSON SCORE</figcaption>
+    <figcaption class="mono">FIG.6 — AUDITABLE VNSM EVALUATION · SHOT PACKET → 4 TIMESTAMPED FRAMES (OPTIONAL BOUNDED CLIP) → VISIBLE EVIDENCE → ANCHORED GRADE + VALIDATED JSON</figcaption>
   </figure>
 </section>
 
@@ -447,7 +443,7 @@
     </div>
     <div class="vs-stage">
       <div class="vs-side ours-side">
-        <div class="vs-tag mono"><span class="vs-dot teal"></span>WevisionCut · OURS</div>
+        <div class="vs-tag mono"><span class="vs-dot teal"></span>WeVisCut · OURS</div>
         <div class="vs-frame"><video id="vsOurs" playsinline preload="metadata"></video></div>
       </div>
       <div class="vs-mid">
@@ -474,11 +470,10 @@
       <span class="mono">BIBTEX</span>
       <button class="btn-mini mono" id="copyBib">COPY</button>
     </div>
-<pre class="mono" id="bibText">@article{mu2026WevisionCut,
-  title   = {WevisionCut: One Agent Runs the Whole Editing Room},
-  author  = {Mu, Chenyu and others},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+<pre class="mono" id="bibText">@misc{mu2026weviscut,
+  title  = {WeVisCut: The Whole Editing Room in One Agent: From Narration to Long-Form Video},
+  author = {Mu, Chenyu and Weng, Wenming and Wang, Qinrui and Ye, Xingsong and Yu, Hao and He, Jun and Sun, Chong and Li, Chen and LYU, Jing and Yang, Erkun and Deng, Cheng},
+  year   = {2026}
 }</pre>
   </div>
 </section>
@@ -486,7 +481,7 @@
 <!-- ══════════════ FOOTER ══════════════ -->
 <footer class="footer">
   <div class="footer-inner">
-    <span class="footer-brand"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">WE<span class="accent">VisionCut</span></span>
+    <span class="footer-brand"><img class="brand-mark" src="assets/img/wechat.png" alt="WeChat">We<span class="accent">VisCut</span></span>
     <span class="footer-note mono">AUTONOMOUS LONG-HORIZON TOOL AGENT · SCRIPT&nbsp;&rarr;&nbsp;SCREEN</span>
   </div>
   <div class="footer-fade" aria-hidden="true"></div>
